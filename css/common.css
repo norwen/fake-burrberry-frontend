@@ -286,7 +286,7 @@ body {
   padding: 0;
 
   font-size: .75rem;
-  line-height: 1.17;
+  line-height: 1rem;
   color: #999999;
   font-weight: 400;
   font-family: Raleway, serif;
@@ -315,7 +315,7 @@ body {
   font-weight: 400;
   font-style: italic;
   font-size: .875rem;
-  line-height: .0625rem;
+  line-height: 1rem;
   color: #171717;
 
 }
