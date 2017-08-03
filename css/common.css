@@ -13,7 +13,7 @@ body {
 
 .delimetr-primary {
   width: 100%;
-
+  border: 0;
   border-top: solid 1px #c6c6c6;
 }
 
@@ -42,17 +42,18 @@ body {
 
 .product-images {
   width: 100%;
-  overflow: auto;
+  overflow-x: scroll;
 
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .product-image {
   width: 18.75rem;
 }
 
-.product-info {  padding: 1rem 1rem 3rem 1rem;  }
+.product-info {
+  padding: 1rem 1rem 3rem 1rem;
+}
 
 .product-price-container {
   display: flex;
@@ -78,10 +79,14 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-.product-colors {  padding-bottom: 2rem;  }
+.product-colors {
+  padding-bottom: 2rem;
+}
+
 .product-color-buttons {
   display: flex;
 }
+
 .product-color-selected {
   padding-bottom: 1rem;
 
@@ -159,3 +164,183 @@ body {
   border: none;
   background-color: transparent;
 }
+
+.product-description {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.product-description-title-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 100%;
+}
+
+.product-description-title {
+
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+
+.product-description-icon-triangle-up {
+  transform: rotate(180deg);
+}
+
+.product-description-text {
+  padding-top: 2rem;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  font-family: Lora, serif;
+}
+
+.product-description-text-hidden {
+  display: none;
+}
+
+.product-description-text-delimetr {
+  line-height: 1.5rem;
+}
+
+.product-recommendations {
+  padding-top: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.product-recommendations-title-container,
+.product-recommendations-more-title-container {
+  display: flex;
+}
+
+.product-recommendations-title,
+.product-recommendations-more-title {
+  padding-bottom: .5rem;
+
+  border: 0;
+  border-bottom: 1px solid #171717;
+
+  line-height: 1.1875rem;
+  font-size: 1rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+
+.product-recommendations-items {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-recommendations-item {
+  flex-basis: 8.125rem;
+  margin-bottom: 2rem;
+
+  text-decoration: none;
+}
+
+.product-recommendations-item-image {
+  width: 8.125rem;
+  height: 10.875rem;
+  padding-bottom: .5rem;
+  vertical-align: middle;
+}
+
+.product-recommendations-item-title {
+  padding-bottom: .5rem;
+
+  font-family: Lora, serif;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  color: #171717;
+  font-weight: 400;
+}
+.product-recommendations-item-price {
+  color: #999999;
+  font-size: .75rem;
+  line-height: .875rem;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+}
+.product-recommendations-more {
+  display: flex;
+  flex-flow: column;
+
+  padding-top: 1rem;
+}
+.product-recommendations-more-title-container {
+  padding-bottom: 1.5rem;
+}
+.product-recommendations-more-links {
+
+}
+.product-recommendations-more-link {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-size: .875rem;
+  line-height: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #171717;
+  font-family: Lora, serif;
+  font-style: italic;
+}
+.product-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  background: #f3f3f3;
+}
+
+.product-footer-shipping,
+.product-footer-lang {
+
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0;
+
+  font-size: .75rem;
+  line-height: 1.17;
+  color: #999999;
+  font-family: Raleway, serif;
+  font-weight: 400;
+
+  border: none;
+  background-color: #f3f3f3;
+}
+
+.product-footer-help {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+
+  text-align: center;
+  color: #171717;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+.product-footer-link-contact {
+  display: block;
+
+  text-align: center;
+  text-decoration: none;
+  font-family: Lora, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: .875rem;
+  line-height: .0625rem;
+  color: #171717;
+
+}
+
