@@ -159,19 +159,31 @@ body {
 .product-description {  padding: 2rem 1rem;  }
 
 .description-title {
-  display: flex;
-  justify-content: space-between;
   flex: 0 0 100%;
 }
 
 .description-title__title {
+  position: relative;
+
   line-height: 1.25rem;
   font-size: 1rem;
   font-weight: 400;
   font-family: Raleway, sans-serif;
 }
 
-.description-title__icon_triangle-up {  transform: rotate(180deg);  }
+.description-title__title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: .625rem;
+  height: 1.25rem;
+
+  background: url(../img/triangle.svg) no-repeat center right;
+}
+
+.description-title__title_open::after {  transform: rotate(-180deg);  }
 
 .product-description__text {
   padding-top: 2rem;
@@ -310,11 +322,11 @@ body {
 
   text-align: center;
   text-decoration: none;
-  font-family: Lora, serif;
   font-weight: 400;
   font-style: italic;
   font-size: .875rem;
   line-height: 1.0625rem;
   color: #171717;
+  font-family: Lora, serif;
 
 }
