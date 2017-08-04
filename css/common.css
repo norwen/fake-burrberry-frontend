@@ -41,18 +41,18 @@ body {
   font-family: Lora, serif;
 }
 
-.product-images {
+.gallery {
   flex: 0 0 100%;
   overflow-x: scroll;
 
   display: flex;
 }
 
-.product-images__image {  width: 18.75rem;  }
+.gallery__photo {  width: 18.75rem;  }
 
 .product-info {  padding: 1rem 1rem 3rem 1rem;  }
 
-.price-container {
+.product-info__price-container {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -60,7 +60,7 @@ body {
   padding-bottom: 1rem;
 }
 
-.price-container__price {
+.product-info__price {
   margin: 0;
 
   font-size: 1em;
@@ -68,7 +68,7 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-.price-container__article {
+.product-info__article {
   align-self: center;
 
   font-size: .75rem;
@@ -80,7 +80,7 @@ body {
 
 .product-colors-buttons {  display: flex;  }
 
-.product-colors__color_selected {
+.product-info__color_selected {
   padding-bottom: 1rem;
 
   font-size: .75rem;
@@ -158,11 +158,11 @@ body {
 
 .product-description {  padding: 2rem 1rem;  }
 
-.description-title {
+.product-description__header {
   flex: 0 0 100%;
 }
 
-.description-title__title {
+.product-description__title {
   position: relative;
 
   line-height: 1.25rem;
@@ -171,7 +171,7 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-.description-title__title::after {
+.product-description__title::after {
   content: '';
   position: absolute;
   top: 0;
@@ -183,7 +183,7 @@ body {
   background: url(../img/triangle.svg) no-repeat center right;
 }
 
-.description-title__title_open::after {  transform: rotate(-180deg);  }
+.product-description__title_open::after {  transform: rotate(-180deg);  }
 
 .product-description__text {
   padding-top: 2rem;
@@ -205,13 +205,13 @@ body {
   flex-flow: column;
 }
 
-.recommendations-title,
-.recommendations-more-title {
+.product-recommendations__header,
+.recommendations-more__header {
   display: flex;
 }
 
-.recommendations-title__title,
-.recommendations-more-title__title {
+.product-recommendations__title,
+.recommendations-more__title {
   padding-bottom: .5rem;
 
   border: 0;
@@ -230,7 +230,7 @@ body {
   justify-content: space-between;
 }
 
-.recommendations-items__item {
+.recommendations__item {
   flex-basis: 8.125rem;
   margin-bottom: 2rem;
 
@@ -266,11 +266,11 @@ body {
 
   padding-top: 1rem;
 }
-.recommendations-more-title {
+.recommendations-more__header {
   padding-bottom: 1.5rem;
 }
 
-.recommendations-more-links__link {
+.recommendations-more__link {
   display: block;
   margin-bottom: 1rem;
 
