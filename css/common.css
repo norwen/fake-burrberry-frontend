@@ -95,6 +95,10 @@ body {
 
   border: 1px solid #232122;
   border-radius: 2.5rem;
+
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
 }
 
 .product-colors-buttons__button_active {  border: 1px solid #232122;  }
