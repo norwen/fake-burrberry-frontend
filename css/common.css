@@ -26,6 +26,8 @@ body {
 }
 
 .header__logo {
+  vertical-align: middle;
+
   height: .625rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
