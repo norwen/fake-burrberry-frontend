@@ -310,30 +310,33 @@ body {
 
   .delivery__photo {
     display: block;
+    width: 100%;
   }
 
   .delivery__header {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 19px;
     color: #171717;
   }
 
   .delivery__paragraph_header {
+    height: .825rem;
+    margin: 0 0 0.25rem;
+
     font-size: .75rem;
     line-height: .825rem;
   }
 
   .delivery__paragraph_text {
-    padding-top: .25rem;
-
     font-size: .75rem;
     line-height: 1rem;
   }
 
   .delivery__paragraph {
+    display: block;
     margin-bottom: 1.5rem;
   }
 
@@ -357,7 +360,7 @@ body {
   }
 
   .product-recommendations__header {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
