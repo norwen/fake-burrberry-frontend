@@ -343,16 +343,11 @@ body {
 }
 
 .product-recommendations {
-  padding-top: 3rem;
-  padding-right: .5rem;
-  padding-left: .5rem;
-  display: flex;
-  flex-flow: column;
+  padding: 3rem 0.5rem 0;
 }
 
 .product-recommendations__header,
 .recommendations-more__header {
-  display: flex;
   padding-bottom: 1.5rem;
 }
 
@@ -369,6 +364,7 @@ body {
 .product-recommendations__title,
 .recommendations-more__title {
   padding-bottom: .5rem;
+  display: inline-block;
 
   border: 0;
   border-bottom: 1px solid #171717;
@@ -389,18 +385,11 @@ body {
 }
 
 .recommendations-items__image {
-  height: 10.875rem;
-  width: 8.125rem;
+
+  width: 100%;
+  height: auto;
   padding-bottom: .5rem;
   vertical-align: middle;
-}
-
-@media (min-width: 48rem) {
-
-  .recommendations-items__image {
-    width: 11rem;
-    height: auto;
-  }
 }
 
 .recommendations-items__title {
