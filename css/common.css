@@ -12,8 +12,8 @@ body {
 }
 
 .blocks-delimiter {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 
   border: 0;
   border-top: solid 1px #c6c6c6;
@@ -65,16 +65,15 @@ body {
 .gallery {
   flex: 0 0 100%;
   overflow-x: scroll;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 
   display: flex;
 }
 
 .gallery__photo {
-  width: 18.75rem;
+  width: auto;
   height: 25rem;
-
 }
 
 @media (min-width: 48rem) {
@@ -85,7 +84,6 @@ body {
 
   .gallery__photo {
     flex: none;
-    width: 27rem;
     height: 36rem;
   }
 }
@@ -246,7 +244,6 @@ body {
   .product-description__title::after {
     display: none;
   }
-
 }
 
 .product-description__title_open::after {
@@ -324,7 +321,7 @@ body {
 
   .delivery__paragraph_header {
     height: .825rem;
-    margin: 0 0 0.25rem;
+    margin: 0 0 .25rem;
 
     font-size: .75rem;
     line-height: .825rem;
@@ -346,7 +343,7 @@ body {
 }
 
 .product-recommendations {
-  padding: 3rem 0.5rem 0;
+  padding: 3rem .5rem 0;
 }
 
 .product-recommendations__header,
@@ -416,8 +413,14 @@ body {
 .recommendations-more {
   display: flex;
   flex-flow: column;
-
   padding-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 48rem) {
+  .recommendations-more {
+    display: none;
+  }
 }
 
 .recommendations-more__link {
@@ -433,86 +436,84 @@ body {
   font-family: Lora, Helvetica, Arial, serif;
 }
 
-@media (min-width: 48rem) {
-  .recommendations-more {
-    display: none;
-  }
-}
-
-.product-footer-mobile {
-  margin-top: 3rem;
-  padding: 2rem 1rem;
-
+.main-footer {
+  display: block;
+  padding-top: 2rem;
   background: #f3f3f3;
 }
 
-.product-footer-mobile__button_shipping,
-.product-footer-mobile__button_lang {
-
-  display: block;
-  margin-bottom: 1rem;
-  padding: 0;
-
-  font-size: .75rem;
-  line-height: 1rem;
-  color: #999999;
-  font-weight: 400;
-  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-
-  border: none;
-  background-color: #f3f3f3;
-}
-
-.product-footer-mobile__help {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-
-  text-align: center;
-  color: #171717;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-.product-footer-mobile__link_contact {
-  display: block;
-
-  text-align: center;
-  text-decoration: none;
-  font-weight: 400;
-  font-style: italic;
-  font-size: .875rem;
-  line-height: 1.0625rem;
-  color: #171717;
-  font-family: Lora, Helvetica, Arial, serif;
-
-}
-
-@media (min-width: 48rem) {
-  .product-footer-mobile {
-    display: none;
-  }
-
-}
-
-.main-footer {
+.main-footer__navs {
   display: none;
 }
 
+.main-footer__btn {
+  padding-left: .5rem;
+  padding-right: .5rem;
+
+  color: #999999;
+  line-height: 1rem;
+  font-size: .75rem;
+  text-decoration: none;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  background-color: transparent;
+  border: none;
+}
+
+.main-footer__btn_country {
+  margin: 0 1.3125rem 1rem 0;
+}
+
+.main-footer__btn_lang {
+  margin: 0 0 1.5rem;
+}
+
+.main-footer__help {
+  margin: 0 0 1rem;
+
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #171717;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.main-footer__contacts {
+  padding-bottom: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-align: center;
+}
+
+.main-footer__contact {
+  margin: 0;
+
+  font-size: .875rem;
+  line-height: 17px;
+  color: #171717;
+  font-family: Lora, serif;
+  font-style: italic;
+}
+
 @media (min-width: 48rem) {
-  .main-footer {
+  .main-footer__contacts {
+    display: none;
+  }
+
+  .main-footer__navs {
     display: block;
-    background: #f3f3f3;
+
+    margin-bottom: 2rem;
+  }
+
+  .main-footer__btn {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
   }
 
   .footer-menu__nav {
     display: flex;
     flex-flow: column;
-  }
-
-  .main-footer__column {
-    margin-top: 2rem;
   }
 
   .main-footer__header {
@@ -530,6 +531,10 @@ body {
     color: #999999;
     text-decoration: none;
     font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+
+  .main-footer__link:last-child {
+    margin: 0;
   }
 }
 
