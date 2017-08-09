@@ -237,7 +237,7 @@ body {
   width: .625rem;
   height: 1.25rem;
 
-  background: url(../img/triangle.svg) no-repeat center right;
+  background: url(images/triangle.svg) no-repeat center right;
 }
 
 @media (min-width: 48rem) {
