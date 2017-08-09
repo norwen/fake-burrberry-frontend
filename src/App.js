@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import Footer from "./components/Footer";
-import Header from "./components/Header/index";
+import Header from "./components/Header";
+import Gallery from "./components/Gallery";
 
 
 class App extends Component {
@@ -14,16 +15,7 @@ class App extends Component {
 
             <div className="row">
               <div className="col-xs-12 col-md-7">
-                <div className="gallery">
-                  <img className="gallery__photo" src="img/bitmap_4.jpg"
-                       srcSet="img/bitmap_4@2x.jpg 2x,img/bitmap_4@3x.jpg 3x"/>
-                  <img className="gallery__photo" src="img/bitmap_2.jpg"
-                       srcSet="img/bitmap_2@2x.jpg 2x,img/bitmap_2@3x.jpg 3x"/>
-                  <img className="gallery__photo" src="img/bitmap.jpg"
-                       srcSet="img/bitmap@2x.jpg 2x,img/bitmap@3x.jpg 3x"/>
-                  <img className="gallery__photo" src="img/bitmap_3.jpg"
-                       srcSet="img/bitmap_3@2x.jpg 2x,img/bitmap_3@3x.jpg 3x"/>
-                </div>
+                <Gallery/>
               </div>
 
               <div className="col-xs-12 col-md-5">

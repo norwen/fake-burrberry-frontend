@@ -1,0 +1,25 @@
+.gallery {
+  flex: 0 0 100%;
+  overflow-x: scroll;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+
+  display: flex;
+}
+
+.gallery__photo {
+  width: auto;
+  height: 25rem;
+}
+
+@media (min-width: 48rem) {
+
+  .gallery {
+    margin: 0;
+  }
+
+  .gallery__photo {
+    flex: none;
+    height: 36rem;
+  }
+}
