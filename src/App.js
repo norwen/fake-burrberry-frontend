@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Gallery from "./components/Gallery";
-
+import Header from "./Header/index";
+import Gallery from "./Product/Gallery/index";
+import Footer from "./Footer/index";
 
 class App extends Component {
   render() {
@@ -184,8 +183,6 @@ class App extends Component {
             </section>
           </div>
           <Footer/>
-
-
         </div>
     );
   }
