@@ -30,7 +30,7 @@ class App extends Component {
             <hr className="blocks-delimiter"/>
 
             <div className="row">
-                <Description/>
+              <Description/>
             </div>
 
             <hr className="blocks-delimiter"/>
@@ -43,7 +43,7 @@ class App extends Component {
 
             <hr className="blocks-delimiter"/>
 
-          <Recommendations/>
+            <Recommendations/>
           </div>
           <Footer/>
 
