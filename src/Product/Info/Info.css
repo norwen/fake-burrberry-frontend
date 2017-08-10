@@ -1,0 +1,122 @@
+.product-info {
+  padding: 1rem .5rem 3rem .5rem;
+}
+
+@media (min-width: 48rem) {
+  .product-info {
+    padding: 0 0 3rem 0;
+  }
+}
+
+.product-info__price-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  padding-bottom: 1rem;
+}
+
+.product-info__price {
+  margin: 0;
+
+  font-size: 1em;
+  line-height: 1.1875rem;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.product-info__article {
+  align-self: center;
+
+  font-size: .75rem;
+  line-height: 1rem;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.product-colors {
+  padding-bottom: 2rem;
+}
+
+.product-colors-buttons {
+  display: flex;
+}
+
+.product-info__color_selected {
+  padding-bottom: 1rem;
+
+  font-size: .75rem;
+  line-height: 1rem;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.product-colors-buttons__button {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+
+  border: 1px solid #232122;
+  border-radius: 2.5rem;
+
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}
+
+.product-colors-buttons__button_active {
+  border: 1px solid #232122;
+}
+
+.product-colors-buttons__button_bg-black {
+  background: #000000;
+}
+
+.product-colors-buttons__button_bg-brown {
+  background: #cfa880;
+}
+
+.product-buttons {
+  display: flex;
+  flex-flow: column;
+  padding-top: 2rem;
+
+  border-top: solid 1px #c6c6c6;
+}
+
+.product-buttons__button {
+  height: 3rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+
+  line-height: .875rem;
+  font-size: .75rem;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  border-radius: .125rem;
+}
+
+.product-buttons__button_size {
+  color: #ffffff;
+
+  background: #171717;
+  border: 1px solid #171717;
+}
+
+.product-buttons__button_store {
+  color: #171717;
+
+  background: #ffffff;
+  border: 1px solid #999999;
+}
+
+.product-buttons__button_help {
+  margin-top: .5rem;
+  padding: 0;
+  align-self: start;
+
+  font-size: .75rem;
+  line-height: 1rem;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  color: #171717;
+  border: none;
+  background-color: transparent;
+}

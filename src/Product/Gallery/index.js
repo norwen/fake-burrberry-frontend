@@ -1,25 +1,39 @@
 import React, {Component} from 'react';
 import './Gallery.css';
 
-import galleryPhotos from "../../data/gallery-photos.json";
-
-class Gallery extends Component {
-
-  // builds photos elements for the gallery
-  makeGallery() {
-    return galleryPhotos.map(function (photoObj, index) {
-      return <img className="gallery__photo" src={photoObj.src} key={index}/>;
-    });
+const galleryPhotos = [
+  {
+    "src": "images/bitmap_4.jpg",
+    "src2x": "../images/bitmap_4@2x.jpg 2x",
+    "src3x": "../images/bitmap_4@3x.jpg 3x"
+  },
+  {
+    "src": "images/bitmap_4.jpg",
+    "src2x": "../images/bitmap_4@2x.jpg 2x",
+    "src3x": "../images/bitmap_4@3x.jpg 3x"
+  },
+  {
+    "src": "images/bitmap_2.jpg",
+    "src2x": "../images/bitmap@2x.jpg 2x",
+    "src3x": "../images/bitmap@3x.jpg 3x"
+  },
+  {
+    "src": "images/bitmap_3.jpg",
+    "src2x": "../images/bitmap_3@2x.jpg 2x",
+    "src3x": "../images/bitmap_3@3x.jpg 3x"
   }
+];
 
-  render() {
+export default () => {
     return (
+
         <div className="gallery">
-          {this.makeGallery()}
+          {
+            galleryPhotos.map(function(photoObj, index) {
+              return <img className="gallery__photo" src={photoObj.src} key={index}/>;
+            })
+          }
         </div>
     )
-  }
 }
-
-export default Gallery;
 
