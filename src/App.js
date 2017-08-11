@@ -58,7 +58,7 @@ class App extends Component {
             <hr className="blocks-delimiter"/>
 
             <div className="row">
-              <Shipping/>
+              <Description title="Shipping & returns" />
             </div>
 
             <Delivery/>

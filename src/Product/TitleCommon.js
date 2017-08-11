@@ -13,7 +13,7 @@ const Title = styled.h2`
   text-transform: uppercase;
   line-height: 1.1875rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
