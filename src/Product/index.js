@@ -1,10 +1,23 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 import {Helmet} from "react-helmet";
 import Gallery from "./Gallery";
 import Description from "./Description";
 import Recommendations from './Recommendations'
 import Info from './Info';
 import Delivery from './Delivery';
+import BlockDelimiter from "./BlockDelimiter";
+
+const ProductTitle = styled.h1`
+  padding: 1rem .5rem;
+  margin: 0;
+
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #171717;
+  font-family: Lora, serif;
+`;
 
 class Product extends Component {
 
@@ -14,7 +27,7 @@ class Product extends Component {
         <Helmet>
           <title>Long Cotton Gabardine Car Coat | Burberry</title>
         </Helmet>
-        <h1 className="product-title">Long Cotton Gabardine Car Coat</h1>
+        <ProductTitle>Long Cotton Gabardine Car Coat</ProductTitle>
 
         <div className="row">
           <div className="col-xs-12 col-md-7">
@@ -26,7 +39,7 @@ class Product extends Component {
           </div>
         </div>
 
-        <hr className="blocks-delimiter"/>
+        <BlockDelimiter/>
 
         <div className="row">
           <Description title="Description">
@@ -54,15 +67,17 @@ class Product extends Component {
           </Description>
         </div>
 
-        <hr className="blocks-delimiter"/>
+        <BlockDelimiter/>
 
         <div className="row">
-          <Description title="Shipping & returns"/>
+          <Description title="Shipping & returns">
+            <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
+          </Description>
         </div>
 
         <Delivery/>
 
-        <hr className="blocks-delimiter"/>
+        <BlockDelimiter/>
 
         <Recommendations/>
       </div>

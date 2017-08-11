@@ -19,7 +19,7 @@ const Img = styled.img`
 const Header = styled.h2`
    margin-bottom: 1rem;
 
-   font-weight: 400;
+   font-weight: 500;
    font-size: 1rem;
    line-height: 19px;
    color: #171717;
