@@ -16,7 +16,7 @@ const Info = styled.section`
 export default function() {
   return(
     <Info>
-      <PriceArticle price="110 000" article="39428531"/>
+      <PriceArticle price="110000" article="39428531"/>
       <Colors/>
       <Buttons/>
     </Info>

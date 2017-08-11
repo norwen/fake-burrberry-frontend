@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {FormattedNumber} from "react-intl";
 
 export const Container = styled.a`
   display: flex;
@@ -44,7 +45,15 @@ export default(props) => {
     <Container href="#">
       <Photo src={props.photoUrl} alt={props.nameFull}/>
       <Title>{props.name}</Title>
-      <Price>{props.price}</Price>
+      <Price>
+        <FormattedNumber
+        value={props.price}
+        style="currency"
+        currency="RUB"
+        currencyDisplay="symbol"
+        minimumFractionDigits="0"
+        />
+      </Price>
     </Container>
   );
 }

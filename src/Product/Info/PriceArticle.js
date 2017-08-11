@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FormattedNumber } from 'react-intl'
 
 const PriceArticle = styled.div`
   display: flex;
@@ -29,7 +30,15 @@ const Article = styled.p`
 export default function(props) {
   return (
     <PriceArticle>
-      <Price>{props.price}</Price>
+      <Price>
+        <FormattedNumber
+          value={props.price}
+          style="currency"
+          currency="RUB"
+          currencyDisplay="symbol"
+          minimumFractionDigits="0"
+        />
+      </Price>
       <Article>Item {props.article}</Article>
     </PriceArticle>
   )
