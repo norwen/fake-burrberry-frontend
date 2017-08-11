@@ -1,39 +1,116 @@
-import React, {Component} from 'react';
-import './Description.css';
+import React, {Component} from 'react'
+import styled from 'styled-components'
+import icon from '../../assests/images/triangle.svg'
 
-export default () => {
-  return (
-      <div className="col-xs-12">
-        <div className="product-description">
-          <div className="product-description__header">
-            <h2 className="product-description__title product-description__title_open">DESCRIPTION</h2>
-          </div>
+export const Container = styled.section`
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  
+  @media screen and (min-width: 48rem) {
+    padding: 1.5rem .5rem;
+  
+    border: none;
+    border-top: 1px solid transparent;
+  }
 
-          <div className="product-description__text">
-            <p>A refined car coat crafted in protective cotton gabardine.</p>
-            <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric
-              that
-              protects
-              against wind and rain.</p>
-            <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
-            <p>The piece is finished with a distinctive check undercollar.</p>
-            <br className="description-text-delimiter"/>
-            <ul>
-              <li>Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly
-                according to
-                size.
-              </li>
-              <li>Outer: 100% cotton</li>
-              <li>Check lining: 100% cotton</li>
-              <li>Sleeve lining: 100% viscose</li>
-              <li>Buttons: buffalo horn</li>
-              <li>Specialist dry clean</li>
-              <li>Made in Europe</li>
-              <li>Item 39428531</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  )
+  ::after {
+    position: absolute;
+    content: url(${icon});
+    right: 1rem;
+    ${props => (props.isActive ? 'transform: rotate(180deg);' : '')};
+  }
+  @media screen and (min-width: 48rem) {
+    ::after {
+      display: none;
+    }
+  }
+`;
+
+export const ToggleButton = styled.button`
+  display: flex;
+  flex-basis: 100%;
+  padding: 0;
+  justify-content: space-between;
+  align-items: baseline;
+  
+  border: none;
+  background: transparent;
+`;
+
+export const Title = styled.h2`
+  margin: 0;
+  
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  font-family: Raleway, 'Helvetica Neue', Helvetica, Arial;
+  
+  @media screen and (min-width: 48rem) {
+    margin-bottom: 1rem;
+  }
+`;
+
+export const Content = styled.div`
+  display: ${props => (props.isActive ? `block` : 'none')};
+  margin-top: 2rem;
+  font-size: .875rem;
+  
+  line-height: 1.5rem;
+  
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    
+    font-size: .875rem;
+    line-height: 1.5rem;
+  }
+  
+  li {
+     list-style: none;
+  }
+`;
+
+class Description extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      isActive: false
+    };
+    this.toggleContent = this.toggleContent.bind(this)
+  }
+
+  toggleContent() {
+    this.setState((state, props) => ({
+      isActive: !this.state.isActive
+    }));
+  }
+
+  render() {
+    return (
+        <Container isActive={this.state.isActive}>
+          <ToggleButton type="button" onClick={this.toggleContent}>
+            <Title>
+              {this.props.title}
+            </Title>
+          </ToggleButton>
+          <Content isActive={this.state.isActive}>
+            {this.props.children}
+          </Content>
+        </Container>
+    )
+  }
 }
 
+export default Description;
