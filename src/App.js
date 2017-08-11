@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import Header from "./Header/index";
-import Gallery from "./Product/Gallery/index";
-import Info from "./Product/Info/index";
-import Footer from "./Footer/index";
-import Description from "./Product/Description/index";
-import Delivery from "./Product/Delivery/index";
-import Recommendations from "./Product/Recommendations/index";
-import Shipping from "./Product/Shipping/index";
+import Header from "./Header";
+import Gallery from "./Product/Gallery";
+import Info from "./Product/Info";
+import Footer from "./Footer";
+import Description from "./Product/Description";
+import Delivery from "./Product/Delivery";
+import Recommendations from "./Product/Recommendations";
+import Shipping from "./Product/Shipping";
 
 class App extends Component {
   render() {
@@ -68,8 +68,6 @@ class App extends Component {
             <Recommendations/>
           </div>
           <Footer/>
-
-
         </div>
     );
   }
