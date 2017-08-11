@@ -99,16 +99,16 @@ class Description extends Component {
 
   render() {
     return (
-        <Container isActive={this.state.isActive}>
-          <ToggleButton type="button" onClick={this.toggleContent}>
-            <Title>
-              {this.props.title}
-            </Title>
-          </ToggleButton>
-          <Content isActive={this.state.isActive}>
-            {this.props.children}
-          </Content>
-        </Container>
+      <Container isActive={this.state.isActive}>
+        <ToggleButton type="button" onClick={this.toggleContent}>
+          <Title>
+            {this.props.title}
+          </Title>
+        </ToggleButton>
+        <Content isActive={this.state.isActive}>
+          {this.props.children}
+        </Content>
+      </Container>
     )
   }
 }

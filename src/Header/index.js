@@ -13,7 +13,7 @@ const Header = styled.header`
   }
 `;
 export default () => {
-  return (
+  return(
     <Header>
       <a href="#"><img src={process.env.PUBLIC_URL+'images/logo.svg'} alt="Burberry logo"/></a>
     </Header>

@@ -19,13 +19,13 @@ const Buttons = styled.div`
 `;
 
 export default function(props) {
-  return (
-      <Colors>
-        <ColorSelected>Colour: Honey</ColorSelected>
-        <Buttons>
-          <ButtonColor name="Black" color="#000000"/>
-          <ButtonColor name="Honey" color="#cfa880" isActive="true"/>
-        </Buttons>
-      </Colors>
+  return(
+    <Colors>
+      <ColorSelected>Colour: Honey</ColorSelected>
+      <Buttons>
+        <ButtonColor name="Black" color="#000000"/>
+        <ButtonColor name="Honey" color="#cfa880" isActive="true"/>
+      </Buttons>
+    </Colors>
   );
 }

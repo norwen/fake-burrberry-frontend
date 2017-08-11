@@ -38,18 +38,6 @@ body {
   font-family: Lora, serif;
 }
 
-@media (min-width: 48rem) {
-  .header__logo {
-    margin: 1.5rem auto;
-  }
-
-  .product-title {
-    padding: 1.5rem 0;
-
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
 
 
 

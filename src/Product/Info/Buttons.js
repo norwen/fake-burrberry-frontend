@@ -40,10 +40,10 @@ const ButtonHelp = styled.button`
 
 export default function() {
   return (
-      <Buttons>
-        <ButtonSize type="button">SELECT A SIZE</ButtonSize>
-        <ButtonStore type="button">FIND IN STORE</ButtonStore>
-        <ButtonHelp type="button">NEED SIZE HELP?</ButtonHelp>
-      </Buttons>
+    <Buttons>
+      <ButtonSize type="button">SELECT A SIZE</ButtonSize>
+      <ButtonStore type="button">FIND IN STORE</ButtonStore>
+      <ButtonHelp type="button">NEED SIZE HELP?</ButtonHelp>
+    </Buttons>
   )
 }

@@ -28,9 +28,9 @@ const Article = styled.p`
 
 export default function(props) {
   return (
-      <PriceArticle>
-        <Price>{props.price}</Price>
-        <Article>Item {props.article}</Article>
-      </PriceArticle>
+    <PriceArticle>
+      <Price>{props.price}</Price>
+      <Article>Item {props.article}</Article>
+    </PriceArticle>
   )
 }

@@ -41,10 +41,10 @@ export const Price = styled.h5`
 export default(props) => {
 
   return(
-      <Container href="#">
-        <Photo src={props.photoUrl} alt={props.nameFull}/>
-        <Title>{props.name}</Title>
-        <Price>{props.price}</Price>
-      </Container>
+    <Container href="#">
+      <Photo src={props.photoUrl} alt={props.nameFull}/>
+      <Title>{props.name}</Title>
+      <Price>{props.price}</Price>
+    </Container>
   );
 }

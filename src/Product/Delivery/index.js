@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -49,40 +49,40 @@ const ParagraphText = styled.p`
 
 export default () => {
   return (
-      <Container>
+    <Container>
       <div className="row">
-          <div className="col-md-7">
-            <Img src="images/bitmap_delivery.jpg"
-                 srcSet="images/bitmap_delivery@2x.jpg 2x,images/bitmap_delivery@3x.jpg 3x" alt="Delivery info"/>
-          </div>
+        <div className="col-md-7">
+          <Img src="images/bitmap_delivery.jpg"
+               srcSet="images/bitmap_delivery@2x.jpg 2x,images/bitmap_delivery@3x.jpg 3x" alt="Delivery info"/>
+        </div>
 
-          <div className="col-md-5">
-            <Header>
-              DELIVERY
-            </Header>
+        <div className="col-md-5">
+          <Header>
+            DELIVERY
+          </Header>
 
-            <Paragraph>
-              <ParagraphHeader>Free Next Day Delivery</ParagraphHeader>
-              <ParagraphText>Order before 7pm Monday to Thursday for delivery the next day</ParagraphText>
-            </Paragraph>
+          <Paragraph>
+            <ParagraphHeader>Free Next Day Delivery</ParagraphHeader>
+            <ParagraphText>Order before 7pm Monday to Thursday for delivery the next day</ParagraphText>
+          </Paragraph>
 
-            <Paragraph>
-              <ParagraphHeader>Collect-in-Store</ParagraphHeader>
-              <ParagraphText>Order online today and pick up your items in store as early as tomorrow</ParagraphText>
-            </Paragraph>
+          <Paragraph>
+            <ParagraphHeader>Collect-in-Store</ParagraphHeader>
+            <ParagraphText>Order online today and pick up your items in store as early as tomorrow</ParagraphText>
+          </Paragraph>
 
-            <Paragraph>
-              <ParagraphHeader>Free Returns</ParagraphHeader>
-              <ParagraphText>Enjoy free returns on your order</ParagraphText>
-            </Paragraph>
+          <Paragraph>
+            <ParagraphHeader>Free Returns</ParagraphHeader>
+            <ParagraphText>Enjoy free returns on your order</ParagraphText>
+          </Paragraph>
 
-            <Paragraph>
-              <ParagraphHeader>Free Gift Packaging</ParagraphHeader>
-              <ParagraphText>Discover our gift packaging, a gold lined box tied with a coloured ribbon</ParagraphText>
-            </Paragraph>
-          </div>
+          <Paragraph>
+            <ParagraphHeader>Free Gift Packaging</ParagraphHeader>
+            <ParagraphText>Discover our gift packaging, a gold lined box tied with a coloured ribbon</ParagraphText>
+          </Paragraph>
+        </div>
       </div>
-      </Container>
+    </Container>
   )
 }
 

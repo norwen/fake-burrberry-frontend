@@ -63,25 +63,23 @@ const TitleHelp = styled.h4`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-
 export default function () {
   return (
-      <Footer>
+    <Footer>
+      <Navs/>
 
-          <Navs/>
-          <ButtonText type="button">
-            Shipping country: Russian Federation
-          </ButtonText>
+      <ButtonText type="button">
+        Shipping country: Russian Federation
+      </ButtonText>
 
-          <ButtonText type="button">
-            Language: English
-          </ButtonText>
+      <ButtonText type="button">
+        Language: English
+      </ButtonText>
 
-          <Contacts>
-            <TitleHelp>Need help?</TitleHelp>
-            <LinkContact>Find out more and contact us</LinkContact>
-          </Contacts>
-
-      </Footer>
+      <Contacts>
+        <TitleHelp>Need help?</TitleHelp>
+        <LinkContact>Find out more and contact us</LinkContact>
+      </Contacts>
+    </Footer>
   )
 }

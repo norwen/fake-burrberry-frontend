@@ -51,13 +51,13 @@ class Gallery extends Component {
 
   render() {
     return (
-        <Container>
-          {
-            galleryPhotos.map(function (photoObj, index) {
-              return <Photo src={photoObj.src} key={index}/>;
-            })
-          }
-        </Container>
+      <Container>
+        {
+          galleryPhotos.map(function (photoObj, index) {
+            return <Photo src={photoObj.src} key={index}/>;
+          })
+        }
+      </Container>
     )
   }
 }
