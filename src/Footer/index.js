@@ -1,105 +1,87 @@
 import React from 'react';
+import styled from 'styled-components';
+import Navs from "./Navs";
 
-export default () => {
+const Footer = styled.footer`
+  display: block;
+ padding: 1rem 1rem 2rem 1rem;
+  background: #f3f3f3;
+  
+  @media (min-width: 48rem) {
+    padding: 2rem .5rem;
+  }
+`;
+
+const ButtonText = styled.button`
+  display: block;
+  margin-top: 1rem;
+  padding: 0;
+  
+  line-height: 1rem;
+  font-size: .75rem;
+  font-family: Raleway, 'Helvetica Neue', Helvetica, Arial;
+   color: #999999;
+   
+  background: transparent;
+  border: none;
+ 
+ @media (min-width: 48rem) {
+    display: inline-block;
+    margin-top: 1.25rem;
+    margin-right: 1.25rem;
+  }
+`;
+
+const Contacts = styled.div`
+  padding-bottom: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-align: center;
+  
+  @media (min-width: 48rem) {
+    display: none;
+  }
+`;
+
+const LinkContact = styled.a`
+  margin: 0;
+
+  font-size: .875rem;
+  line-height: 17px;
+  color: #171717;
+  font-family: Lora, serif;
+  font-style: italic;
+`;
+
+const TitleHelp = styled.h4`
+  margin: 1.5rem 0 1rem;
+
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #171717;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+`;
+
+
+export default function () {
   return (
-        <footer className="main-footer">
-          <div className="container">
-            <div className="main-footer__navs">
-              <div className="row">
-                <div className="col-md-3">
-                  <h3 className="main-footer__header">
-                    CUSTOMER SERVICE
-                  </h3>
-                  <nav className="footer-menu__nav">
-                    <a href="#" className="main-footer__link">
-                      Contact Us
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Payment
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Shipping
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Returns
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Faqs
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Live Chat
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      The Burberry App
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Store Locator
-                    </a>
-                  </nav>
-                </div>
+      <Footer>
 
-                <div className="col-md-3">
-                  <h3 className="main-footer__header">
-                    OUR COMPANY
-                  </h3>
-                  <nav className="footer-menu__nav">
-                    <a href="#" className="main-footer__link">
-                      Our History
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Burberry Group Pic
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Careers
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Corporate Responsibility
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Site Map
-                    </a>
-                  </nav>
-                </div>
+          <Navs/>
+          <ButtonText type="button">
+            Shipping country: Russian Federation
+          </ButtonText>
 
-                <div className="col-md-3">
-                  <h3 className="main-footer__header">
-                    LEGAL & COOKIES
-                  </h3>
-                  <nav className="footer-menu__nav">
-                    <a href="#" className="main-footer__link">
-                      Terms & Conditions
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Privacy Policy
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Cookie Policy
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Accessibility Statement
-                    </a>
-                    <a href="#" className="main-footer__link">
-                      Japan Only - SCTL indications
-                    </a>
-                  </nav>
-                </div>
-              </div>
+          <ButtonText type="button">
+            Language: English
+          </ButtonText>
 
-            </div>
+          <Contacts>
+            <TitleHelp>Need help?</TitleHelp>
+            <LinkContact>Find out more and contact us</LinkContact>
+          </Contacts>
 
-            <button className="main-footer__btn main-footer__btn_country" type="button">
-              Shipping country: Russian Federation
-            </button>
-
-            <button className="main-footer__btn main-footer__btn_lang" type="button">
-              Language: English
-            </button>
-
-            <div className="main-footer__contacts">
-              <h4 className="main-footer__help">Need help?</h4>
-              <a className="main-footer__contact">Find out more and contact us</a>
-            </div>
-          </div>
-        </footer>
+      </Footer>
   )
 }
