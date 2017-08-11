@@ -19,6 +19,12 @@ const ProductTitle = styled.h1`
   font-family: Lora, serif;
 `;
 
+const ContainerMobile = styled.div`
+  @media (min-width: 48rem) {
+    display: none;
+  }
+`;
+
 class Product extends Component {
 
   render() {
@@ -69,11 +75,13 @@ class Product extends Component {
 
         <BlockDelimiter/>
 
-        <div className="row">
-          <Description title="Shipping & returns">
-            <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
-          </Description>
-        </div>
+        <ContainerMobile>
+          <div className="row">
+              <Description title="Shipping & returns">
+                <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
+              </Description>
+          </div>
+        </ContainerMobile>
 
         <Delivery/>
 
