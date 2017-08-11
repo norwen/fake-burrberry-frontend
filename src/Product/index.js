@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Helmet} from "react-helmet";
 import Gallery from "./Gallery";
 import Description from "./Description";
 import Recommendations from './Recommendations'
@@ -10,6 +11,9 @@ class Product extends Component {
   render() {
     return (
       <div className="container">
+        <Helmet>
+          <title>Long Cotton Gabardine Car Coat | Burberry</title>
+        </Helmet>
         <h1 className="product-title">Long Cotton Gabardine Car Coat</h1>
 
         <div className="row">
