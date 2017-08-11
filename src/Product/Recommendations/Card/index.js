@@ -51,7 +51,7 @@ export default(props) => {
         style="currency"
         currency="RUB"
         currencyDisplay="symbol"
-        minimumFractionDigits="0"
+        minimumFractionDigits={0}
         />
       </Price>
     </Container>
