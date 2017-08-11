@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
 import Header from "./Header";
-import Gallery from "./Product/Gallery";
 import Info from "./Product/Info";
 import Footer from "./Footer";
 import Description from "./Product/Description";
 import Delivery from "./Product/Delivery";
 import Recommendations from "./Product/Recommendations";
 import Shipping from "./Product/Shipping";
+import Gallery from "./Product/Gallery";
 
 class App extends Component {
   render() {

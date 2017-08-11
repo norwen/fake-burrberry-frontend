@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Gallery.css';
+import styled from 'styled-components';
 
 const galleryPhotos = [
   {
@@ -24,16 +24,43 @@ const galleryPhotos = [
   }
 ];
 
-export default () => {
-    return (
+export const Container = styled.div`
+  flex: 0 0 100%;
+  overflow-x: scroll;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 
-        <div className="gallery">
+  display: flex;
+  
+  @media (min-width: 48rem) {
+    margin: 0;
+  }
+`;
+
+const Photo = styled.img`
+  width: auto;
+  height: 25rem;
+  
+  @media (min-width: 48rem) {
+    flex: none;
+    height: 36rem;
+  }
+`;
+
+class Gallery extends Component {
+
+  render() {
+    return (
+        <Container>
           {
-            galleryPhotos.map(function(photoObj, index) {
-              return <img className="gallery__photo" src={photoObj.src} key={index}/>;
+            galleryPhotos.map(function (photoObj, index) {
+              return <Photo src={photoObj.src} key={index}/>;
             })
           }
-        </div>
+        </Container>
     )
+  }
 }
+
+export default Gallery;
 
