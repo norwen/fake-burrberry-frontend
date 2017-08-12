@@ -20,6 +20,7 @@ const Price = styled.h1`
 
 const Article = styled.p`
   align-self: center;
+  margin: 0;
 
   font-size: .75rem;
   line-height: 1rem;

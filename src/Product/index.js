@@ -76,7 +76,7 @@ export default function () {
 
       <SmallVisible>
         <div className="row">
-          <Description title="Shipping & returns">
+          <Description title="Delivery">
             <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
           </Description>
         </div>

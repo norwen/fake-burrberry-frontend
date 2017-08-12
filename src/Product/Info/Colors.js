@@ -4,6 +4,7 @@ import ButtonColor from "./ButtonColor";
 
 const ColorSelected = styled.p`
   padding-bottom: 1rem;
+  margin: 0;
 
   font-size: .75rem;
   line-height: 1rem;

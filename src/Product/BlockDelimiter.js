@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 const BlockDelimiter = styled.hr`
-  margin-left: -.5rem;
-  margin-right: -.5rem;
+  margin: 0 -.5rem;
 
   border: 0;
   border-top: solid 1px #c6c6c6;
