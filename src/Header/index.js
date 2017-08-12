@@ -11,11 +11,22 @@ const Header = styled.header`
   @media (min-width: 48rem) {
     padding: 1.25rem 0;
   }
+  
+`;
+
+const Link = styled.a``;
+
+const Logo = styled.img`
+  @media screen and (min-width: 62rem) {
+    height: 1rem;
+  }
 `;
 export default () => {
   return (
     <Header>
-      <a href="#"><img src={process.env.PUBLIC_URL + 'images/logo.svg'} alt="Burberry logo"/></a>
+      <Link href="#">
+        <Logo src={process.env.PUBLIC_URL + 'images/logo.svg'} alt="Burberry logo"/>
+      </Link>
     </Header>
   )
 }

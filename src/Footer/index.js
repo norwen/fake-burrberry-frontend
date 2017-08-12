@@ -10,6 +10,10 @@ const Footer = styled.footer`
   @media (min-width: 48rem) {
     padding: 2rem .5rem;
   }
+  
+  @media (min-width: 62rem) {
+    padding: 4rem 0;
+  }
 `;
 
 const ButtonText = styled.button`
@@ -66,20 +70,22 @@ const TitleHelp = styled.h4`
 export default function () {
   return (
     <Footer>
-      <Navs/>
+      <div className="container">
+        <Navs/>
 
-      <ButtonText type="button">
-        Shipping country: Russian Federation
-      </ButtonText>
+        <ButtonText type="button">
+          Shipping country: Russian Federation
+        </ButtonText>
 
-      <ButtonText type="button">
-        Language: English
-      </ButtonText>
+        <ButtonText type="button">
+          Language: English
+        </ButtonText>
 
-      <Contacts>
-        <TitleHelp>Need help?</TitleHelp>
-        <LinkContact>Find out more and contact us</LinkContact>
-      </Contacts>
+        <Contacts>
+          <TitleHelp>Need help?</TitleHelp>
+          <LinkContact>Find out more and contact us</LinkContact>
+        </Contacts>
+      </div>
     </Footer>
   )
 }

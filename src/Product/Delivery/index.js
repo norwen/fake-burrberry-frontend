@@ -9,6 +9,10 @@ const Container = styled.div`
   @media (min-width: 48rem) {
     display: block;
   }
+  
+   @media (min-width: 62rem) {
+    padding-bottom: 4rem;
+  }
 `;
 
 const Content = styled.div`
