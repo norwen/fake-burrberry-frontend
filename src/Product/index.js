@@ -10,6 +10,7 @@ import BlockDelimiter from "./BlockDelimiter";
 import PhotoMain from "./Desktop/PhotoMain";
 import Head from "./Desktop/Head";
 import ImageDesc from "./Description/ImageDesc";
+import Photos from "./Photos";
 
 const Name = styled.h1`
   padding: 1rem;
@@ -121,11 +122,17 @@ class Product extends Component {
 
           <SmallVisible>
             <div className="row">
-              <Description title="Shipping & returns">
-                <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
-              </Description>
+              <div className="col-md-12">
+                <Description title="Shipping & returns">
+                  <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
+                </Description>
+              </div>
             </div>
           </SmallVisible>
+
+          <LargeVisible>
+            <Photos/>
+          </LargeVisible>
 
           <Delivery/>
 

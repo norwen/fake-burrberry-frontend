@@ -11,6 +11,17 @@ const Container = styled.div`
   }
 `;
 
+const Content = styled.div`
+ @media (min-width: 62rem) {
+    width: 100%;
+    padding: 0 6.125rem;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+ }
+`;
+
 const Img = styled.img`
   display: block;
   width: 100%;
@@ -57,29 +68,32 @@ export default () => {
         </div>
 
         <div className="col-md-5">
-          <Header>
-            DELIVERY
-          </Header>
+          <Content>
+            <Header>
+              DELIVERY
+            </Header>
 
-          <Paragraph>
-            <Title>Free Next Day Delivery</Title>
-            <Text>Order before 7pm Monday to Thursday for delivery the next day</Text>
-          </Paragraph>
+            <Paragraph>
+              <Title>Free Next Day Delivery</Title>
+              <Text>Order before 7pm Monday to Thursday for delivery the next day</Text>
+            </Paragraph>
 
-          <Paragraph>
-            <Title>Collect-in-Store</Title>
-            <Text>Order online today and pick up your items in store as early as tomorrow</Text>
-          </Paragraph>
+            <Paragraph>
+              <Title>Collect-in-Store</Title>
+              <Text>Order online today and pick up your items in store as early as tomorrow</Text>
+            </Paragraph>
 
-          <Paragraph>
-            <Title>Free Returns</Title>
-            <Text>Enjoy free returns on your order</Text>
-          </Paragraph>
+            <Paragraph>
+              <Title>Free Returns</Title>
+              <Text>Enjoy free returns on your order</Text>
+            </Paragraph>
 
-          <Paragraph>
-            <Title>Free Gift Packaging</Title>
-            <Text>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Text>
-          </Paragraph>
+            <Paragraph>
+              <Title>Free Gift Packaging</Title>
+              <Text>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Text>
+            </Paragraph>
+          </Content>
+
         </div>
       </div>
     </Container>

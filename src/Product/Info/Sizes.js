@@ -81,17 +81,17 @@ const Button = styled.button`
 
 export default function () {
   return (
-  <Sizes>
-    <Header>
-      <Size>Size: <Selected>XL</Selected></Size>
-      <Help>Need size help?</Help>
-    </Header>
-    <Buttons>
-      <Button>S</Button>
-      <Button>M</Button>
-      <Button>L</Button>
-      <Button isSelected="true">XL</Button>
-    </Buttons>
-  </Sizes>
+    <Sizes>
+      <Header>
+        <Size>Size: <Selected>XL</Selected></Size>
+        <Help>Need size help?</Help>
+      </Header>
+      <Buttons>
+        <Button>S</Button>
+        <Button>M</Button>
+        <Button>L</Button>
+        <Button isSelected="true">XL</Button>
+      </Buttons>
+    </Sizes>
   )
 }

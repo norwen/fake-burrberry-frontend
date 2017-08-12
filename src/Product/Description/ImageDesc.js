@@ -6,6 +6,7 @@ const ImageDesc = PhotoSingle.extend`
 
   @media screen and (min-width: 62rem) {
     display: block;
+    width: 100%;
   }
 `;
 

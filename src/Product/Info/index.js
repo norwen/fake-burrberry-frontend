@@ -70,17 +70,17 @@ const Content = styled.p`
 export default function () {
   return (
     <Info>
-        <Name>Long Cotton Gabardine Car Coat | Long Cotton Gabardine Car Coat</Name>
-        <PriceArticle price="110000" article="39428531"/>
-        <ColorsSizes>
-          <Colors/>
-          <Sizes/>
-        </ColorsSizes>
-        <Buttons/>
-        <Text>
-          <Title>Free Next Day Delivery</Title>
-          <Content>Order before 7pm Monday to Thursday for delivery the next day</Content>
-        </Text>
+      <Name>Long Cotton Gabardine Car Coat | Long Cotton Gabardine Car Coat</Name>
+      <PriceArticle price="110000" article="39428531"/>
+      <ColorsSizes>
+        <Colors/>
+        <Sizes/>
+      </ColorsSizes>
+      <Buttons/>
+      <Text>
+        <Title>Free Next Day Delivery</Title>
+        <Content>Order before 7pm Monday to Thursday for delivery the next day</Content>
+      </Text>
     </Info>
   )
 }
