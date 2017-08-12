@@ -19,7 +19,7 @@ const ProductTitle = styled.h1`
   font-family: Lora, serif;
 `;
 
-const ContainerMobile = styled.div`
+const SmallVisible = styled.div`
   @media (min-width: 48rem) {
     display: none;
   }
@@ -74,13 +74,13 @@ export default function () {
 
       <BlockDelimiter/>
 
-      <ContainerMobile>
+      <SmallVisible>
         <div className="row">
           <Description title="Shipping & returns">
             <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
           </Description>
         </div>
-      </ContainerMobile>
+      </SmallVisible>
 
       <Delivery/>
 
