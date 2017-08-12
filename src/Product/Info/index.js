@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import MetaInfo from "./MetaInfo";
 import Colors from "./Colors";
 import Buttons from "./Buttons";
-import PriceArticle from "./PriceArticle";
+
 
 const Info = styled.section`
   padding: 1rem .5rem 3rem .5rem;
@@ -16,7 +16,7 @@ const Info = styled.section`
 export default function () {
   return (
     <Info>
-      <PriceArticle price="110000" article="39428531"/>
+      <MetaInfo price="110000" article="39428531"/>
       <Colors/>
       <Buttons/>
     </Info>

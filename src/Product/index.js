@@ -8,7 +8,7 @@ import Info from './Info';
 import Delivery from './Delivery';
 import BlockDelimiter from "./BlockDelimiter";
 
-const ProductTitle = styled.h1`
+const Name = styled.h1`
   padding: 1rem .5rem;
   margin: 0;
 
@@ -32,7 +32,7 @@ export default function () {
       <Helmet>
         <title>Long Cotton Gabardine Car Coat | Burberry</title>
       </Helmet>
-      <ProductTitle>Long Cotton Gabardine Car Coat</ProductTitle>
+      <Name>Long Cotton Gabardine Car Coat</Name>
 
       <div className="row">
         <div className="col-xs-12 col-md-7">

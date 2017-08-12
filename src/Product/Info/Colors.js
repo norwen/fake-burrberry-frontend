@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ButtonColor from "./ButtonColor";
 
-const ColorSelected = styled.p`
+const Selected = styled.p`
   padding-bottom: 1rem;
   margin: 0;
 
@@ -22,7 +22,7 @@ const Buttons = styled.div`
 export default function (props) {
   return (
     <Colors>
-      <ColorSelected>Colour: Honey</ColorSelected>
+      <Selected>Colour: Honey</Selected>
       <Buttons>
         <ButtonColor name="Black" color="#000000"/>
         <ButtonColor name="Honey" color="#cfa880" isActive="true"/>

@@ -53,7 +53,7 @@ const LinkContact = styled.a`
   font-style: italic;
 `;
 
-const TitleHelp = styled.h4`
+const Title = styled.h4`
   margin: 1.5rem 0 1rem;
 
   font-weight: bold;
@@ -77,7 +77,7 @@ export default function () {
       </ButtonText>
 
       <Contacts>
-        <TitleHelp>Need help?</TitleHelp>
+        <Title>Need help?</Title>
         <LinkContact>Find out more and contact us</LinkContact>
       </Contacts>
     </Footer>
