@@ -62,11 +62,14 @@ class Product extends Component {
 
         <Head bgColor="#d4bdad">
           <div className="container">
-            <MidVisible>
-              <Name>Long Cotton Gabardine Car Coat</Name>
-            </MidVisible>
-
-            <div className="row middle-lg">
+            <div className="row">
+              <div className="col-xs-12">
+                <MidVisible>
+                  <Name>Long Cotton Gabardine Car Coat</Name>
+                </MidVisible>
+              </div>
+            </div>
+            <div className="row">
               <div className="col-xs-12 col-md-7 col-lg-6">
                 <MidVisible>
                   <Gallery/>
@@ -80,6 +83,7 @@ class Product extends Component {
                 <Info/>
               </div>
             </div>
+
           </div>
         </Head>
 
@@ -122,8 +126,8 @@ class Product extends Component {
 
           <SmallVisible>
             <div className="row">
-              <div className="col-md-12">
-                <Description title="Shipping & returns">
+              <div className="col-xs-12 col-md-12">
+                <Description title="Delivery">
                   <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
                 </Description>
               </div>

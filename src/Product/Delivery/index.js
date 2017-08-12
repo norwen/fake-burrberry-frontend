@@ -6,19 +6,19 @@ const Container = styled.div`
   
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   
-  @media (min-width: 48rem) {
+  @media screen and (min-width: 48rem) {
     display: block;
+    margin-top: 3rem;
   }
-  
-   @media (min-width: 62rem) {
-    padding-bottom: 4rem;
+
+  @media screen and (min-width: 62rem) {
+    margin-top: 4rem;
   }
 `;
 
 const Content = styled.div`
  @media (min-width: 62rem) {
     width: 100%;
-    padding: 0 6.125rem;
     height: 100%;
     display: flex;
     flex-flow: column;
@@ -66,12 +66,12 @@ export default () => {
   return (
     <Container>
       <div className="row">
-        <div className="col-md-7">
+        <div className="col-md-6">
           <Img src="images/bitmap_delivery.jpg"
                srcSet="images/bitmap_delivery@2x.jpg 2x,images/bitmap_delivery@3x.jpg 3x" alt="Delivery info"/>
         </div>
 
-        <div className="col-md-5">
+        <div className="col-md-6 col-lg-4 col-lg-offset-1">
           <Content>
             <Header>
               DELIVERY

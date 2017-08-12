@@ -11,7 +11,6 @@ const Header = styled.header`
   @media (min-width: 48rem) {
     padding: 1.25rem 0;
   }
-  
 `;
 
 const Link = styled.a``;
