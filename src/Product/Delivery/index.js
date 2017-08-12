@@ -34,7 +34,7 @@ const Paragraph = styled.div`
   }
 `;
 
-const ParagraphHeader = styled.h3`
+const Title = styled.h3`
   height: .825rem;
   margin: 0 0 .25rem;
 
@@ -42,7 +42,7 @@ const ParagraphHeader = styled.h3`
   line-height: .825rem;
 `;
 
-const ParagraphText = styled.p`
+const Text = styled.p`
   font-size: .75rem;
   line-height: 1rem;
 `;
@@ -62,23 +62,23 @@ export default () => {
           </Header>
 
           <Paragraph>
-            <ParagraphHeader>Free Next Day Delivery</ParagraphHeader>
-            <ParagraphText>Order before 7pm Monday to Thursday for delivery the next day</ParagraphText>
+            <Title>Free Next Day Delivery</Title>
+            <Text>Order before 7pm Monday to Thursday for delivery the next day</Text>
           </Paragraph>
 
           <Paragraph>
-            <ParagraphHeader>Collect-in-Store</ParagraphHeader>
-            <ParagraphText>Order online today and pick up your items in store as early as tomorrow</ParagraphText>
+            <Title>Collect-in-Store</Title>
+            <Text>Order online today and pick up your items in store as early as tomorrow</Text>
           </Paragraph>
 
           <Paragraph>
-            <ParagraphHeader>Free Returns</ParagraphHeader>
-            <ParagraphText>Enjoy free returns on your order</ParagraphText>
+            <Title>Free Returns</Title>
+            <Text>Enjoy free returns on your order</Text>
           </Paragraph>
 
           <Paragraph>
-            <ParagraphHeader>Free Gift Packaging</ParagraphHeader>
-            <ParagraphText>Discover our gift packaging, a gold lined box tied with a coloured ribbon</ParagraphText>
+            <Title>Free Gift Packaging</Title>
+            <Text>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Text>
           </Paragraph>
         </div>
       </div>
