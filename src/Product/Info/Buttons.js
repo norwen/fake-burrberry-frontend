@@ -8,23 +8,44 @@ const Buttons = styled.div`
   padding-top: 2rem;
 
   border-top: solid 1px #c6c6c6;
+  
+  @media (min-width: 62rem) {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    border: none;
+    flex-flow: row;
+    justify-content: flex-start;
+  }
 `;
 
-const ButtonSize = Button.extend`
+const Primary = Button.extend`
   color: #ffffff;
 
   background: #171717;
   border: 1px solid #171717;
+  
+  @media (min-width: 62rem) {
+    display: inline-block;
+    width: 14.5rem;
+    margin-right: 1rem;
+  }
 `;
 
-const ButtonStore = Button.extend`
+const Secondary = Button.extend`
   color: #171717;
 
   background: #ffffff;
   border: 1px solid #999999;
+  
+  @media (min-width: 62rem) {
+    display: inline-block;
+    width: 14.5rem;
+    background: transparent;
+    border: solid 1px #171717;
+  }
 `;
 
-const ButtonHelp = styled.button`
+const Text = styled.button`
   margin-top: .5rem;
   padding: 0;
   align-self: start;
@@ -36,14 +57,20 @@ const ButtonHelp = styled.button`
   color: #171717;
   border: none;
   background-color: transparent;
+  
+  @media (min-width: 62rem) {
+    display: none;
+  }
+  
+  
 `;
 
 export default function () {
   return (
     <Buttons>
-      <ButtonSize type="button">SELECT A SIZE</ButtonSize>
-      <ButtonStore type="button">FIND IN STORE</ButtonStore>
-      <ButtonHelp type="button">NEED SIZE HELP?</ButtonHelp>
+      <Primary type="button">SELECT A SIZE</Primary>
+      <Secondary type="button">FIND IN STORE</Secondary>
+      <Text type="button">NEED SIZE HELP?</Text>
     </Buttons>
   )
 }
