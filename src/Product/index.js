@@ -7,10 +7,10 @@ import Recommendations from './Recommendations'
 import Info from './Info';
 import Delivery from './Delivery';
 import BlockDelimiter from "./BlockDelimiter";
-import PhotoMain from "./Desktop/PhotoMain";
-import Head from "./Desktop/Head";
 import ImageDesc from "./Description/ImageDesc";
 import Photos from "./Photos";
+import Head from "./Head";
+import PhotoMain from "./PhotoMain";
 
 const Name = styled.h1`
   padding: 1rem;
@@ -24,6 +24,7 @@ const Name = styled.h1`
   
   @media (min-width: 48rem) {
     padding: 1rem .5rem;
+    font-size: 1.5rem;
   } 
 `;
 

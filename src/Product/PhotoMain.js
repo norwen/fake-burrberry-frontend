@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoSingle from '../PhotoSingle';
+import PhotoSingle from './PhotoSingle';
 
 const PhotoMain = PhotoSingle.extend`
   height:  40.625rem;

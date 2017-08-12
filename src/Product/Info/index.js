@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import Colors from "./Colors";
 import Buttons from "./Buttons";
-import PriceArticle from "./PriceArticle";
 import Sizes from "./Sizes";
+import MetaInfo from "./MetaInfo";
 
 const Info = styled.section`
   padding: 1rem .5rem 3rem .5rem;
@@ -70,8 +70,8 @@ const Content = styled.p`
 export default function () {
   return (
     <Info>
-      <Name>Long Cotton Gabardine Car Coat | Long Cotton Gabardine Car Coat</Name>
-      <PriceArticle price="110000" article="39428531"/>
+      <Name>Long Cotton Gabardine Car Coat</Name>
+      <MetaInfo price="110000" article="39428531"/>
       <ColorsSizes>
         <Colors/>
         <Sizes/>

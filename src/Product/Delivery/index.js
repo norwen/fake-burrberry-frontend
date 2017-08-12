@@ -32,7 +32,7 @@ const Img = styled.img`
 `;
 
 const Header = styled.h2`
-   margin-bottom: 1rem;
+   margin: 0 0 1rem 0;
 
    font-weight: 500;
    font-size: 1rem;
@@ -66,12 +66,12 @@ export default function () {
   return (
     <Delivery>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-7">
           <Img src="images/bitmap_delivery.jpg"
                srcSet="images/bitmap_delivery@2x.jpg 2x,images/bitmap_delivery@3x.jpg 3x" alt="Delivery info"/>
         </div>
 
-        <div className="col-md-6 col-lg-4 col-lg-offset-1">
+        <div className="col-md-5 col-lg-4 col-lg-offset-1">
           <Content>
             <Header>
               DELIVERY

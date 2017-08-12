@@ -16,7 +16,7 @@ const Header = styled.header`
 const Link = styled.a``;
 
 const Logo = styled.img`
-  @media screen and (min-width: 62rem) {
+  @media screen and (min-width: 48rem) {
     height: 1rem;
   }
 `;
