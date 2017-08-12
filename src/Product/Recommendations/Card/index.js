@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {FormattedNumber} from "react-intl";
 
-export const Container = styled.a`
+export const Card = styled.a`
   display: flex;
   flex-flow: column;
   margin: 0 0 2rem;
@@ -38,10 +38,9 @@ export const Price = styled.h5`
 `;
 
 
-export default(props) => {
-
+export default function (props) {
   return (
-    <Container href="#">
+    <Card href="#">
       <Photo src={props.photoUrl} alt={props.nameFull}/>
       <Title>{props.name}</Title>
       <Price>
@@ -53,6 +52,6 @@ export default(props) => {
           minimumFractionDigits={0}
         />
       </Price>
-    </Container>
+    </Card>
   );
 }

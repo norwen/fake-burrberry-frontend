@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Delivery = styled.div`
   display: none;
   
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -62,9 +62,9 @@ const Text = styled.p`
   line-height: 1rem;
 `;
 
-export default () => {
+export default function () {
   return (
-    <Container>
+    <Delivery>
       <div className="row">
         <div className="col-md-6">
           <Img src="images/bitmap_delivery.jpg"
@@ -100,7 +100,7 @@ export default () => {
 
         </div>
       </div>
-    </Container>
+    </Delivery>
   )
 }
 

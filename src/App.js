@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,8 +10,7 @@ import ruLocaleData from 'react-intl/locale-data/ru'
 
 addLocaleData(ruLocaleData);
 
-class App extends Component {
-  render() {
+export default () => {
     return (
       <IntlProvider locale="ru">
         <div>
@@ -21,7 +20,4 @@ class App extends Component {
         </div>
       </IntlProvider>
     );
-  }
 }
-
-export default App;

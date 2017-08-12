@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {FormattedNumber} from 'react-intl'
 
-const PriceArticle = styled.div`
+const MetaInfo = styled.div`
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -29,6 +29,7 @@ const Price = styled.h1`
 
 const Article = styled.p`
   align-self: center;
+  margin: 0;
 
   font-size: .75rem;
   line-height: 1rem;
@@ -42,7 +43,7 @@ const Article = styled.p`
 
 export default function (props) {
   return (
-    <PriceArticle>
+    <MetaInfo>
       <Price>
         <FormattedNumber
           value={props.price}
@@ -53,6 +54,6 @@ export default function (props) {
         />
       </Price>
       <Article>Item {props.article}</Article>
-    </PriceArticle>
+    </MetaInfo>
   )
 }

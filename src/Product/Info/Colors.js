@@ -5,6 +5,7 @@ import ButtonColor from "./ButtonColor";
 const Color = styled.div`
   display: inline-block;
   padding-bottom: 1rem;
+  margin: 0;
 
   font-size: .75rem;
   line-height: 1rem;

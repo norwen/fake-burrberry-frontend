@@ -7,6 +7,7 @@ const Container = styled.div`
 
 const Title = styled.h2`
   display: inline-block;
+  margin: 0;
 
   border: 0;
 
