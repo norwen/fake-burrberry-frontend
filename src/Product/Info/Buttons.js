@@ -38,7 +38,7 @@ const ButtonHelp = styled.button`
   background-color: transparent;
 `;
 
-export default function() {
+export default function () {
   return (
     <Buttons>
       <ButtonSize type="button">SELECT A SIZE</ButtonSize>

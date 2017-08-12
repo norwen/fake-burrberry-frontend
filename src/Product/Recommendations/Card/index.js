@@ -38,20 +38,19 @@ export const Price = styled.h5`
 `;
 
 
-
 export default(props) => {
 
-  return(
+  return (
     <Container href="#">
       <Photo src={props.photoUrl} alt={props.nameFull}/>
       <Title>{props.name}</Title>
       <Price>
         <FormattedNumber
-        value={props.price}
-        style="currency"
-        currency="RUB"
-        currencyDisplay="symbol"
-        minimumFractionDigits={0}
+          value={props.price}
+          style="currency"
+          currency="RUB"
+          currencyDisplay="symbol"
+          minimumFractionDigits={0}
         />
       </Price>
     </Container>

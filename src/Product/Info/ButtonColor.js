@@ -13,7 +13,7 @@ const ButtonColor = styled.button`
   background-color: ${props => props.color};
 `;
 
-export default function(props) {
+export default function (props) {
   return (
     <ButtonColor color={props.color} isActive={props.isActive} type="button">
       Select {props.name} color

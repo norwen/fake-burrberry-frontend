@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FormattedNumber } from 'react-intl'
+import {FormattedNumber} from 'react-intl'
 
 const PriceArticle = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ const Article = styled.p`
 `;
 
 
-export default function(props) {
+export default function (props) {
   return (
     <PriceArticle>
       <Price>

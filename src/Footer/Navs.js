@@ -37,7 +37,7 @@ const Link = styled.a`
 
 
 export default function () {
-  return(
+  return (
     <Navs>
       <div className="row">
         <div className="col-md-3">

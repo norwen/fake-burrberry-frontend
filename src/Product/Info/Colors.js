@@ -18,8 +18,8 @@ const Buttons = styled.div`
   display: flex;
 `;
 
-export default function(props) {
-  return(
+export default function (props) {
+  return (
     <Colors>
       <ColorSelected>Colour: Honey</ColorSelected>
       <Buttons>

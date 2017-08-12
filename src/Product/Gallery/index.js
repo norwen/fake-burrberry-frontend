@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const galleryPhotos = [
@@ -24,7 +24,7 @@ const galleryPhotos = [
   }
 ];
 
-export const Container = styled.div`
+export const Gallery = styled.div`
   flex: 0 0 100%;
   overflow-x: scroll;
   margin-left: -.5rem;
@@ -47,20 +47,15 @@ const Photo = styled.img`
   }
 `;
 
-class Gallery extends Component {
-
-  render() {
-    return (
-      <Container>
-        {
-          galleryPhotos.map(function (photoObj, index) {
-            return <Photo src={photoObj.src} key={index}/>;
-          })
-        }
-      </Container>
-    )
-  }
+export default function () {
+  return (
+    <Gallery>
+      {
+        galleryPhotos.map(function (photoObj, index) {
+          return <Photo src={photoObj.src} key={index}/>;
+        })
+      }
+    </Gallery>
+  )
 }
-
-export default Gallery;
 
