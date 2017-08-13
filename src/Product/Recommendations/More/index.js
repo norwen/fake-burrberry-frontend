@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import TitleCommon from '../../TitleCommon';
+import React from "react";
+import styled from "styled-components";
+import TitleCommon from "../../TitleCommon";
 
 const More = styled.section`
   display: flex;
@@ -29,19 +29,13 @@ const Link = styled.a`
 `;
 
 export default function() {
-  const links = [
-    { url: '#', name: 'Men’s Black Trench Coats' },
-    { url: '#', name: 'Men’s Short Trench Coats' },
-    { url: '#', name: 'Men’s Long Trench Coats' },
-  ];
-
   return (
     <More>
       <TitleCommon>MORE FOR YOU</TitleCommon>
       <Links>
-        {links.map(function(link, index) {
-          return <Link href={link.url} key={index}>{link.name}</Link>;
-        })}
+        <Link href="#">Men’s Black Trench Coats</Link>
+        <Link href="#">Men’s Short Trench Coats</Link>
+        <Link href="#">Men’s Long Trench Coats</Link>
       </Links>
     </More>
   );
