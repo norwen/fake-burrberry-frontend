@@ -11,13 +11,13 @@ import ruLocaleData from 'react-intl/locale-data/ru'
 addLocaleData(ruLocaleData);
 
 export default () => {
-    return (
-      <IntlProvider locale="ru">
-        <div>
-          <Header/>
-          <Product/>
-          <Footer/>
-        </div>
-      </IntlProvider>
-    );
+  return (
+    <IntlProvider locale="ru">
+      <div>
+        <Header/>
+        <Product/>
+        <Footer/>
+      </div>
+    </IntlProvider>
+  );
 }

@@ -47,7 +47,7 @@ const Contacts = styled.div`
   }
 `;
 
-const LinkContact = styled.a`
+const Link = styled.a`
   margin: 0;
 
   font-size: .875rem;
@@ -83,7 +83,7 @@ export default function () {
 
         <Contacts>
           <Title>Need help?</Title>
-          <LinkContact>Find out more and contact us</LinkContact>
+          <Link>Find out more and contact us</Link>
         </Contacts>
       </div>
     </Footer>
