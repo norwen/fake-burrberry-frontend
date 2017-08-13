@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 import TitleCommon from "../TitleCommon";
-import RecommendationsMore from "./RecommendationsMore/index";
+import More from "./More/index";
 
 const recommendations = [
   {
@@ -70,7 +70,7 @@ export default function() {
           );
         })}
       </div>
-      <RecommendationsMore />
+      <More />
     </Recommendations>
   );
 }

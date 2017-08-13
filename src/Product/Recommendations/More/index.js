@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import TitleCommon from '../../TitleCommon';
 
-const RecommendationsMore = styled.section`
+const More = styled.section`
   display: flex;
   flex-flow: column;
   padding-top: 1rem;
@@ -36,13 +36,13 @@ export default function() {
   ];
 
   return (
-    <RecommendationsMore>
+    <More>
       <TitleCommon>MORE FOR YOU</TitleCommon>
       <Links>
         {links.map(function(link, index) {
           return <Link href={link.url} key={index}>{link.name}</Link>;
         })}
       </Links>
-    </RecommendationsMore>
+    </More>
   );
 }
