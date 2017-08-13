@@ -21,6 +21,7 @@ export const Photo = styled.img`
 
 export const Title = styled.h3`
   padding-bottom: .5rem;
+  margin: 0;
 
   line-height: 19px;
   font-size: 1rem;
@@ -30,6 +31,8 @@ export const Title = styled.h3`
 `;
 
 export const Price = styled.h5`
+margin: 0;
+
   color: #999999;
   font-size: .75rem;
   line-height: .875rem;

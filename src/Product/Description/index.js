@@ -27,6 +27,10 @@ export const Container = styled.section`
       display: none;
     }
   }
+  
+  @media screen and (min-width: 62rem) {
+    padding: 0;
+  }
 `;
 
 export const ToggleButton = styled.button`
