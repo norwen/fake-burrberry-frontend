@@ -1,34 +1,34 @@
-import React from 'react';
-import styled from 'styled-components';
-import Card from './Card';
-import TitleCommon from '../TitleCommon';
-import RecommendationsMore from './RecommendationsMore/index';
+import React from "react";
+import styled from "styled-components";
+import Card from "./Card";
+import TitleCommon from "../TitleCommon";
+import RecommendationsMore from "./RecommendationsMore/index";
 
 const recommendations = [
   {
-    photoUrl: 'images/bitmap-6.jpg',
-    name: 'Emroided Hooded',
-    nameFull: 'Content For Three Lines',
-    price: '27000',
+    photoUrl: "images/bitmap-6.jpg",
+    name: "Emroided Hooded",
+    nameFull: "Content For Three Lines",
+    price: 27000
   },
   {
-    photoUrl: 'images/bitmap-7.jpg',
-    name: 'Relaxed Fit Stretch Jeans',
-    nameFull: 'Content For Three Lines',
-    price: '22500',
+    photoUrl: "images/bitmap-7.jpg",
+    name: "Relaxed Fit Stretch Jeans",
+    nameFull: "Content For Three Lines",
+    price: 22500
   },
   {
-    photoUrl: 'images/bitmap-8.jpg',
-    name: 'Leather and House Check',
-    nameFull: 'Content For Three Lines',
-    price: '120000',
+    photoUrl: "images/bitmap-8.jpg",
+    name: "Leather and House Check",
+    nameFull: "Content For Three Lines",
+    price: 120000
   },
   {
-    photoUrl: 'images/bitmap-9.jpg',
-    name: 'Leather Wingtip Check',
-    nameFull: 'Content For Three Lines',
-    price: '46000',
-  },
+    photoUrl: "images/bitmap-9.jpg",
+    name: "Leather Wingtip Check",
+    nameFull: "Content For Three Lines",
+    price: 46000
+  }
 ];
 
 const Recommendations = styled.section`
