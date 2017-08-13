@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import PhotoSingle from '../PhotoSingle'
+import styled, { css } from 'styled-components';
 
 const Photos = styled.section`
   display: none;
@@ -8,24 +7,25 @@ const Photos = styled.section`
   @media (min-width: 62rem) {
     display: flex;
     flex-flow: center;
-    
-    padding-bottom: 4rem;
   }
 `;
 
-const ImgLeft = PhotoSingle.extend`
+const Photo = styled.img`
   width: 100%;
-  margin: 1rem 0 3rem 0;
-`;
-
-const ImgMid = PhotoSingle.extend`
-  width: 100%;
-  margin: 4rem 0 0 0;
-`;
-
-const ImgRight = PhotoSingle.extend`
-  width: 100%;
-  margin: 0 0 4rem 0;
+  height: auto;
+  padding: 0;
+  vertical-align: middle;
+  margin: 6rem 0 6rem 0;
+  
+  ${props => props.isRight && css`
+    margin: 0 0 6rem 0;
+    }
+  `}
+  
+  ${props => props.isLeft && css`
+    margin: 2rem 0 4rem 0;
+    }
+  `}
 `;
 
 export default function (props) {
@@ -33,9 +33,9 @@ export default function (props) {
     <Photos>
       <div className="container">
         <div className="row">
-          <div className="col-lg-4"><ImgLeft src="images/bitmap_3.jpg"/></div>
-          <div className="col-lg-4"><ImgMid src="images/bitmap.jpg"/></div>
-          <div className="col-lg-4"><ImgRight src="images/bitmap_2.jpg"/></div>
+          <div className="col-lg-4"><Photo isLeft src="images/bitmap_3.jpg"/></div>
+          <div className="col-lg-4"><Photo src="images/bitmap.jpg"/></div>
+          <div className="col-lg-4"><Photo isRight src="images/bitmap_2.jpg"/></div>
         </div>
       </div>
     </Photos>

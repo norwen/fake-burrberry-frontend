@@ -1,12 +1,13 @@
 import React from 'react';
-import PhotoSingle from './PhotoSingle';
+import styled from 'styled-components';
 
-const PhotoMain = PhotoSingle.extend`
+const PhotoMain = styled.img`
   height:  40.625rem;
   width: auto;
   display: block;
   margin-right: 0;
-  margin-left: auto;
+  margin-left: auto;  
+  vertical-align: middle;
 `;
 
 export default PhotoMain;

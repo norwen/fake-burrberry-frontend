@@ -10,9 +10,9 @@ const Delivery = styled.div`
     display: block;
     margin-top: 3rem;
   }
-
+  
   @media screen and (min-width: 62rem) {
-    margin-top: 4rem;
+    margin-top: 0;
   }
 `;
 
