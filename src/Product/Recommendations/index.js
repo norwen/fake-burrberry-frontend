@@ -54,7 +54,7 @@ export default function() {
   return (
     <Recommendations>
       <Head>
-        <TitleCommon title="WE RECOMMEND" />
+        <TitleCommon>WE RECOMMEND</TitleCommon>
       </Head>
       <div className="row">
         {recommendations.map((recomm, index) => {

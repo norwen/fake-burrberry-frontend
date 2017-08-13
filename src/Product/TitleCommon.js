@@ -1,13 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Container = styled.div`
-  margin-bottom: 1rem;
-`;
-
-const Title = styled.h2`
+const TitleCommon = styled.h2`
   display: inline-block;
-  margin: 0;
+  margin: 0 0 1rem 0;
 
   border: 0;
 
@@ -18,10 +14,6 @@ const Title = styled.h2`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-export default props => {
-  return (
-    <Container>
-      <Title>{props.title}</Title>
-    </Container>
-  );
-};
+export default function(props) {
+  return <TitleCommon>{props.children}</TitleCommon>;
+}

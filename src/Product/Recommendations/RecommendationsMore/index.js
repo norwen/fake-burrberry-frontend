@@ -37,7 +37,7 @@ export default function() {
 
   return (
     <RecommendationsMore>
-      <TitleCommon title="MORE FOR YOU" />
+      <TitleCommon>MORE FOR YOU</TitleCommon>
       <Links>
         {links.map(function(link, index) {
           return <Link href={link.url} key={index}>{link.name}</Link>;
