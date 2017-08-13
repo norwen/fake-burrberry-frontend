@@ -62,13 +62,16 @@ const Text = styled.p`
   line-height: 1rem;
 `;
 
-export default function () {
+export default function() {
   return (
     <Delivery>
       <div className="row">
         <div className="col-md-7">
-          <Img src="images/bitmap_delivery.jpg"
-               srcSet="images/bitmap_delivery@2x.jpg 2x,images/bitmap_delivery@3x.jpg 3x" alt="Delivery info"/>
+          <Img
+            src="images/bitmap_delivery.jpg"
+            srcSet="images/bitmap_delivery@2x.jpg 2x,images/bitmap_delivery@3x.jpg 3x"
+            alt="Delivery info"
+          />
         </div>
 
         <div className="col-md-5 col-lg-4 col-lg-offset-1">
@@ -79,12 +82,16 @@ export default function () {
 
             <Paragraph>
               <Title>Free Next Day Delivery</Title>
-              <Text>Order before 7pm Monday to Thursday for delivery the next day</Text>
+              <Text>
+                Order before 7pm Monday to Thursday for delivery the next day
+              </Text>
             </Paragraph>
 
             <Paragraph>
               <Title>Collect-in-Store</Title>
-              <Text>Order online today and pick up your items in store as early as tomorrow</Text>
+              <Text>
+                Order online today and pick up your items in store as early as tomorrow
+              </Text>
             </Paragraph>
 
             <Paragraph>
@@ -94,14 +101,14 @@ export default function () {
 
             <Paragraph>
               <Title>Free Gift Packaging</Title>
-              <Text>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Text>
+              <Text>
+                Discover our gift packaging, a gold lined box tied with a coloured ribbon
+              </Text>
             </Paragraph>
           </Content>
 
         </div>
       </div>
     </Delivery>
-  )
+  );
 }
-
-

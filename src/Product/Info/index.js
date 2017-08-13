@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Colors from "./Colors";
-import Buttons from "./Buttons";
-import Sizes from "./Sizes";
-import MetaInfo from "./MetaInfo";
+import Colors from './Colors';
+import Buttons from './Buttons';
+import Sizes from './Sizes';
+import MetaInfo from './MetaInfo';
 
 const Info = styled.section`
   padding: 1rem .5rem 3rem .5rem;
@@ -67,22 +67,22 @@ const Content = styled.p`
   line-height: 1rem;
 `;
 
-export default function () {
+export default function() {
   return (
     <Info>
       <Name>Long Cotton Gabardine Car Coat</Name>
-      <MetaInfo price="110000" article="39428531"/>
+      <MetaInfo price="110000" article="39428531" />
       <ColorsSizes>
-        <Colors/>
-        <Sizes/>
+        <Colors />
+        <Sizes />
       </ColorsSizes>
-      <Buttons/>
+      <Buttons />
       <Text>
         <Title>Free Next Day Delivery</Title>
-        <Content>Order before 7pm Monday to Thursday for delivery the next day</Content>
+        <Content>
+          Order before 7pm Monday to Thursday for delivery the next day
+        </Content>
       </Text>
     </Info>
-  )
+  );
 }
-
-

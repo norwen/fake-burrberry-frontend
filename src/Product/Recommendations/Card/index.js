@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FormattedNumber} from "react-intl";
+import { FormattedNumber } from 'react-intl';
 
 export const Card = styled.a`
   display: flex;
@@ -17,7 +17,6 @@ export const Photo = styled.img`
   padding-bottom: .5rem;
   vertical-align: middle;
 `;
-
 
 export const Title = styled.h3`
   padding-bottom: .5rem;
@@ -40,11 +39,10 @@ margin: 0;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-
-export default function (props) {
+export default function(props) {
   return (
     <Card href="#">
-      <Photo src={props.photoUrl} alt={props.nameFull}/>
+      <Photo src={props.photoUrl} alt={props.nameFull} />
       <Title>{props.name}</Title>
       <Price>
         <FormattedNumber

@@ -35,8 +35,7 @@ const Link = styled.a`
   }
 `;
 
-
-export default function () {
+export default function() {
   return (
     <Navs>
       <div className="row">
@@ -119,5 +118,5 @@ export default function () {
         </div>
       </div>
     </Navs>
-  )
+  );
 }

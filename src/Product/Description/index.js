@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import styled from 'styled-components'
-import icon from '../../assests/images/triangle.svg'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import icon from '../../assests/images/triangle.svg';
 
 export const Container = styled.section`
   position: relative;
@@ -90,14 +90,14 @@ class Description extends Component {
   constructor(props) {
     super();
     this.state = {
-      isActive: false
+      isActive: false,
     };
-    this.toggleContent = this.toggleContent.bind(this)
+    this.toggleContent = this.toggleContent.bind(this);
   }
 
   toggleContent() {
     this.setState((state, props) => ({
-      isActive: !this.state.isActive
+      isActive: !this.state.isActive,
     }));
   }
 
@@ -113,7 +113,7 @@ class Description extends Component {
           {this.props.children}
         </Content>
       </Container>
-    )
+    );
   }
 }
 

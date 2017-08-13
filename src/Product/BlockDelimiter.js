@@ -12,4 +12,3 @@ const BlockDelimiter = styled.hr`
 `;
 
 export default BlockDelimiter;
-

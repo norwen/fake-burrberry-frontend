@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ButtonColor from "./ButtonColor";
+import ButtonColor from './ButtonColor';
 
 const Color = styled.div`
   display: inline-block;
@@ -28,13 +28,13 @@ const Buttons = styled.div`
   display: flex;
 `;
 
-export default function (props) {
+export default function(props) {
   return (
     <Colors>
       <Color>Colour: <Selected>Honey</Selected></Color>
       <Buttons>
-        <ButtonColor name="Black" color="#000000"/>
-        <ButtonColor name="Honey" color="#cfa880" isActive="true"/>
+        <ButtonColor name="Black" color="#000000" />
+        <ButtonColor name="Honey" color="#cfa880" isActive="true" />
       </Buttons>
     </Colors>
   );

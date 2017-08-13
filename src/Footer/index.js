@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navs from "./Navs";
+import Navs from './Navs';
 
 const Footer = styled.footer`
   display: block;
@@ -67,11 +67,11 @@ const Title = styled.h4`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-export default function () {
+export default function() {
   return (
     <Footer>
       <div className="container">
-        <Navs/>
+        <Navs />
 
         <ButtonText type="button">
           Shipping country: Russian Federation
@@ -87,5 +87,5 @@ export default function () {
         </Contacts>
       </div>
     </Footer>
-  )
+  );
 }

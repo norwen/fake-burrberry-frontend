@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import {Helmet} from "react-helmet";
-import Gallery from "./Gallery";
-import Description from "./Description";
-import Recommendations from './Recommendations'
+import { Helmet } from 'react-helmet';
+import Gallery from './Gallery';
+import Description from './Description';
+import Recommendations from './Recommendations';
 import Info from './Info';
 import Delivery from './Delivery';
-import BlockDelimiter from "./BlockDelimiter";
-import ImageDesc from "./Description/ImageDesc";
-import Photos from "./Photos";
-import Head from "./Head";
-import PhotoMain from "./PhotoMain";
+import BlockDelimiter from './BlockDelimiter';
+import ImageDesc from './Description/ImageDesc';
+import Photos from './Photos';
+import Head from './Head';
+import PhotoMain from './PhotoMain';
 
 const Name = styled.h1`
   padding: 1rem;
@@ -73,37 +73,46 @@ class Product extends Component {
             <div className="row">
               <div className="col-xs-12 col-md-7 col-lg-6">
                 <MidVisible>
-                  <Gallery/>
+                  <Gallery />
                 </MidVisible>
                 <LargeVisible>
-                  <PhotoMain src="images/bitmap_4.jpg"/>
+                  <PhotoMain src="images/bitmap_4.jpg" />
                 </LargeVisible>
               </div>
 
               <div className="col-xs-12 col-md-5 col-lg-6">
-                <Info/>
+                <Info />
               </div>
             </div>
 
           </div>
         </Head>
 
-        <BlockDelimiter/>
+        <BlockDelimiter />
         <div className="container">
           <DescriptionContainer>
             <div className="row">
               <div className="col-xs-12 col-lg-4">
                 <Description title="Description">
-                  <p>A refined car coat crafted in protective cotton gabardine.</p>
-                  <p>Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric
+                  <p>
+                    A refined car coat crafted in protective cotton gabardine.
+                  </p>
+                  <p>
+                    Invented by Thomas Burberry in 1879, cotton gabardine is a tightly woven and breathable fabric
                     that
                     protects
-                    against wind and rain.</p>
-                  <p>Raglan sleeves and a concealed button closure complement the clean tailored lines.</p>
-                  <p>The piece is finished with a distinctive check undercollar.</p>
-                  <br/>
+                    against wind and rain.
+                  </p>
+                  <p>
+                    Raglan sleeves and a concealed button closure complement the clean tailored lines.
+                  </p>
+                  <p>
+                    The piece is finished with a distinctive check undercollar.
+                  </p>
+                  <br />
                   <ul>
-                    <li>Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly
+                    <li>
+                      Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly
                       according to
                       size.
                     </li>
@@ -118,35 +127,37 @@ class Product extends Component {
                 </Description>
               </div>
               <div className="col-lg-8">
-                <ImageDesc src="images/bitmap-desc.png"/>
+                <ImageDesc src="images/bitmap-desc.png" />
               </div>
             </div>
           </DescriptionContainer>
 
-          <BlockDelimiter/>
+          <BlockDelimiter />
 
           <SmallVisible>
             <div className="row">
               <div className="col-xs-12 col-md-12">
                 <Description title="Delivery">
-                  <p>Purchases must be returned from the original shipping country with the original Returns Form.</p>
+                  <p>
+                    Purchases must be returned from the original shipping country with the original Returns Form.
+                  </p>
                 </Description>
               </div>
             </div>
           </SmallVisible>
 
           <LargeVisible>
-            <Photos/>
+            <Photos />
           </LargeVisible>
 
-          <Delivery/>
+          <Delivery />
 
-          <BlockDelimiter/>
+          <BlockDelimiter />
 
-          <Recommendations/>
+          <Recommendations />
         </div>
       </main>
-    )
+    );
   }
 }
 

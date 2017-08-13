@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from "../Button";
+import Button from '../Button';
 
 const Buttons = styled.div`
   display: flex;
@@ -65,12 +65,12 @@ const Text = styled.button`
   
 `;
 
-export default function () {
+export default function() {
   return (
     <Buttons>
       <Primary type="button">SELECT A SIZE</Primary>
       <Secondary type="button">FIND IN STORE</Secondary>
       <Text type="button">NEED SIZE HELP?</Text>
     </Buttons>
-  )
+  );
 }

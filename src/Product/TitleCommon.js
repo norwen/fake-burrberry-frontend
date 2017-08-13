@@ -18,10 +18,10 @@ const Title = styled.h2`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-export default(props) => {
+export default props => {
   return (
     <Container>
       <Title>{props.title}</Title>
     </Container>
   );
-}
+};

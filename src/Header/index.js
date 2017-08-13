@@ -24,9 +24,11 @@ export default () => {
   return (
     <Header>
       <Link href="#">
-        <Logo src={process.env.PUBLIC_URL + 'images/logo.svg'} alt="Burberry logo"/>
+        <Logo
+          src={process.env.PUBLIC_URL + 'images/logo.svg'}
+          alt="Burberry logo"
+        />
       </Link>
     </Header>
-  )
-}
-
+  );
+};

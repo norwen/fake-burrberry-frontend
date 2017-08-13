@@ -28,14 +28,18 @@ const Photo = styled.img`
   `}
 `;
 
-export default function (props) {
+export default function(props) {
   return (
     <Photos>
       <div className="container">
         <div className="row">
-          <div className="col-lg-4"><Photo isLeft src="images/bitmap_3.jpg"/></div>
-          <div className="col-lg-4"><Photo src="images/bitmap.jpg"/></div>
-          <div className="col-lg-4"><Photo isRight src="images/bitmap_2.jpg"/></div>
+          <div className="col-lg-4">
+            <Photo isLeft src="images/bitmap_3.jpg" />
+          </div>
+          <div className="col-lg-4"><Photo src="images/bitmap.jpg" /></div>
+          <div className="col-lg-4">
+            <Photo isRight src="images/bitmap_2.jpg" />
+          </div>
         </div>
       </div>
     </Photos>

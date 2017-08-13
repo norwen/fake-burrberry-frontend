@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FormattedNumber} from 'react-intl'
+import { FormattedNumber } from 'react-intl';
 
 const MetaInfo = styled.div`
   display: flex;
@@ -40,8 +40,7 @@ const Article = styled.p`
   }
 `;
 
-
-export default function (props) {
+export default function(props) {
   return (
     <MetaInfo>
       <Price>
@@ -55,5 +54,5 @@ export default function (props) {
       </Price>
       <Article>Item {props.article}</Article>
     </MetaInfo>
-  )
+  );
 }

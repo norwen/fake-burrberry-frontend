@@ -79,7 +79,7 @@ const Button = styled.button`
   border: 1px solid #171717;
 `;
 
-export default function () {
+export default function() {
   return (
     <Sizes>
       <Header>
@@ -93,5 +93,5 @@ export default function () {
         <Button isSelected="true">XL</Button>
       </Buttons>
     </Sizes>
-  )
+  );
 }
