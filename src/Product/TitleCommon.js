@@ -14,6 +14,4 @@ const TitleCommon = styled.h2`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-export default function(props) {
-  return <TitleCommon>{props.children}</TitleCommon>;
-}
+export default TitleCommon;
